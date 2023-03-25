@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        /* .container{ */
+            /* width: 1400px; */
+            /* margin: 0 auto; */
+        }
+        .row{
+            display: flex;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .nav{
+            display: flex;
+            background-color: #6c9994;
+        }
+        .nav1{
+            display: block;
+            margin-left: 70px;
+            margin-top: 5px;
+            background-color: #6c9894;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav ul li  {
+            display: inline-block;
+        }
+        .logo{
+            text-align: center;
+            line-height: 85px;
+        }
+        .logo img{
+            vertical-align: middle;
+            height: 50px;
+            width: 80px;
+        }
+        .list{
+            display: flex;
+            margin-left: auto;
+        }
+        .t-menu ul{ 
+            
+            display: flex;
+            margin-left: 250px;
+            padding: 40px;
+            column-gap: 170px;
+        }
+        .col-50{
+            background-color: white;
+        }
+        .text-1{
+            font-size: 80px;
+            letter-spacing: 1px;
+            color: #6c9894;
+            font-weight: 700;
+            font-family: open sans;
+        }
+        #yoga-class p{
+             margin: 30px auto;
+             color: #6c9894;
+        }
+        .col-501{
+            margin: 200px auto;
+        }
+        .col-501 a{
+            color: white;
+            background-color: #6c9894;
+            margin-left: 60px;
+            padding: 0 20px;
+        }
+        .design{
+            padding: 15PX 10PX;
+        }
+        .posi-rele{
+           position: relative;
+        }
+        .img1{
+          position: absolute;
+        }
+        .shepe-dots{
+          top: 150px;
+          left: 150px;  
+        }
+        .text-h2 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            padding-top: 70px;
+            font-weight: 400px;
+        }
+        .text-p{
+            text-align: center;
+            padding: 30px;
+            color: white;
+            padding-top: 55px;
+        }
+        .col-60{
+            background-color: #6c9894;
+        }
+        .col-33{
+            width: 33%;
+        }
+        .col-33{
+            background-color: #6c9894;
+            padding: 25px;
+        }
+        .imaig-1{
+            position: relative;
+        }
+        .img-1{
+            position: absolute;
+        }
+        .top-img{
+            padding-top: 35px;
+            left: 57px;
+        }
+        .imaig-2{
+            position: relative;
+        }
+        .img-2{
+            position: absolute;
+        }
+        .top-img-1{
+            padding-top: 35px;
+            left: 57px;
+        }
+        .ad-class{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        .ad-loren{
+            text-align: center;
+            color: white;
+            padding-bottom: 70px;
+        }
+        #our-stats{
+            background: url(../MHD.CSS/image/Background.png);
+        }
+        .our-h2{
+            font-size: 60px;
+            text-align: center;
+            color: #6c9894;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+        .our-p{
+            text-align: center;
+            color: #6c9894;
+            padding-top: 30px;
+        }
+        .col-33-1{
+            width: 33.33%;
+        }
+        .logo-1{
+            padding: 80px;
+        }
+        .col-70{
+            width: 50%;
+        }
+        .bg-color{
+            background-color: #6c9894;
+            padding-top: 280px;
+            padding-bottom: 280px;
+        }
+        .col70-h2{
+            padding: 0 50px;
+            font-size: 70px;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .col70-p{
+             padding: 50px;
+             font-size: 20px;
+        }
+        .col-70-img{
+            width: 670px;
+        }
+        .col-70 a{
+            background-color: white;
+            color: #6c9894;
+            margin: 10px 45px;
+            padding: 10px 35px;
+            font-size: 15px;
+        }
+        #new-img{
+            background: url(../MHD.CSS/image/11.png);
+        }
+        .col-40{
+            width: 50%;
+        }
+        .col40-img{
+            padding-top: 80px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+        }
+        .col-401{
+            margin: 280px auto;
+        }
+        .col40-h2{
+            font-size: 50px;
+            color: #6c9894;
+            letter-spacing: 1px;
+        }
+        .col40-p{
+            color: #6c9894;
+            padding: 40px 0;
+        }
+        .col-401 a{
+            background-color: #6c9894;
+            color: white;
+            padding: 8px 30px;
+            display: inline-block;
+            margin: 10px 25px;
+        }
+        .prin-cing{
+             background-color: #6c9894;
+             color: white;
+             text-align: center;
+        }
+        .prin-h2{
+            font-size: 75px;
+            padding: 50px;
+        }
+        .prin-p{
+            padding: 60px 0;
+            font-size: 20px;
+        }
+        .card-33{
+            width: 33.33%;
+            background-color: #6c9894;
+        }
+        .card-33 img{
+            margin: 0 30px;
+            padding-bottom: 70px;
+        }
+        #gurop-img{
+            background-image: url(../MHD.CSS/image/`10.png);
+        }
+        .img-10{
+            position: relative;
+        }
+        .top-img1{
+            position: absolute;
+        }
+        .img-top{
+            padding-top: 40px;
+            left: 40px;
+        }
+        .gurop-7 img{
+            padding-left: 400px;
+            margin: 90px;
+        }
+        .gurop-7-p{
+            padding-left: 150px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #6c9894;
+            font-weight: 400;
+            text-align: center;
+        }
+        .gurop-7-h2{
+            text-align: center;
+            font-size: 60px;
+            color: #6c9894;
+            padding-top: 40px;
+            padding-bottom: 150px;
+        }
+        .gurop-8{
+            background-color: #6c9894;
+        }
+        .gurop-8-h2{
+            font-size: 65px;
+            padding-left: 250px;
+            margin: 60px;
+            color: white;
+        }
+        .gurop-8-p{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        .gurop-8-img{
+            padding-left: 370px;
+            padding-bottom: 130px;
+        }
+        .col-101{
+            width: 40%;
+        }
+        .col-10{
+            width: 20%;
+        }
+        .col10-1{
+            font-size: 25px;
+            padding-top: 100px;
+            padding-bottom: 15px;
+            color: #6c9894;
+            margin-left: 40px;
+        }
+        .col-10-p{
+            padding-left: 40px;
+            color: #6c9894;
+        }
+        #col-11{
+            list-style-type: none;
+            padding-left: 40px;
+            padding-bottom: 60px;
+        }
+        #col-11 a{
+            color: #6c9894;
+        } 
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <div class="nav1">
+            <img class="i1" src="../PSD FILE/PSD imaig/Logo.png" alt="">
+        </div>
+        <div class="list">
+            <nav class="t-menu" >
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<section id="yoga-class">
+        <div class="container ">
+            <div class="row">
+                <div class="col-50 posi-rele">
+                    <img src="../PSD FILE/PSD imaig/img1.png" class="img1 shepe-dots" alt="">
+                    <img class="design" src="../PSD FILE/PSD imaig/Shape (1).png" alt="">
+                  </div>
+                <div class="col-501">
+                    <h2 class="text-1">YOGA CLASS</h2>
+                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                         Donec fringilla neque euismod volutpat cursus,<br>
+                          Vestibulum ac pretium orci.</p>
+                          <a href="#">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="choose-class">
+        <div class="container">
+            <div class="row">
+                <div class="col-60">
+                   <h2 class="text-h2">CHOOSE CLASS</h2>
+                   <P class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.sakvnrmfcrkfdmmgkgmtkv.<br>
+                     Vivamus lacinia odio vitae vestibulum vjkrfirmvir gikkkrtk.loren vivamus dolar sit.<br>
+                      vestibulum. </P> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="yoga-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-33 imaig-1">
+                    <img src="../PSD FILE/PSD imaig/img (1).png" class="img-1 top-img" alt="">
+                    <img src="../PSD FILE/PSD imaig/desing 3.png" class="card-1" alt="">
+                    <h3 class="ad-class">NEWBIE CLASS</h3>
+                    <p class="ad-loren">Lorem ipsum dolor sit amet.lodrk ckrkkcrrk v.<br>
+                         consectetur, adipisicing nhur dioww.</p>
+                </div>
+                <div class="col-33 imaig-2">
+                    <img src="../PSD FILE/PSD imaig/img (2).png" class="img-2 top-img-1" alt="">
+                    <img src="../PSD FILE/PSD imaig/desing 3.png" class="card-2" alt="">
+                    <h3 class="ad-class">ADVANCED CLASS</h3>
+                    <p class="ad-loren">Lorem ipsum dolor sit amet.<br>
+                         consectetur adipisicing.</p>
+                </div>
+                <div class="col-33 imaig-3>
+                    <img src="" alt="">
+                    <img src="../PSD FILE/PSD imaig/desing 3.png" class="card-3" alt="">
+                    <H3 class="ad-class">EXPERT CLASS</H3>
+                    <p class="ad-loren">Lorem ipsum dolor sit amet consectetur.<br>
+                         adipisicing elit. Modi rem illum sae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-stats">
+        <div class="container">
+            <div class="row">
+                <div class="our-div">
+                    <!-- <img src="../PSD FILE/PSD imaig/said 1.png" alt=""> -->
+                   <h2 class="our-h2">OUR STATS</h2>
+                   <P class="our-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.debitis laudantium .<br>
+                     Atque laboriosam debitis laudantium distinctio facilisint debitisdebitisdebitis.<br>
+                     debitisdebitis.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-ststs">
+        <div class="containar">
+            <div class="row">
+                <div class="col-33-1">
+                    <img src="../PSD FILE/PSD imaig/logo 1.png" class="logo-1" alt="">
+                </div>
+                <div class="col-33-1">
+                     <img src="../PSD FILE/PSD imaig/logo 1.png" class="logo-1" alt="">
+                </div>
+                <div class="col-33-1">
+                      <img src="../PSD FILE/PSD imaig/logo 1.png" class="logo-1" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-70 bg-color">
+                    <h2 class="col70-h2">BEST<br>
+                         INSTRUCTOR</h2>
+                    <P class="col70-p">Lorem ipsum dolor sit amet consectetur. Hic quod accusamu sit-<br>
+                         adipisicing elit. Hic quod accusamu.Hic quod accusamu.Hic-<br>
+                          accusantium sequi nulla nemo archi. Hic quod accusamuhic</P>
+                          <a href="#">REDA MORE</a>
+                </div>         
+                <div class="col-70">
+                    <img src="../PSD FILE/PSD imaig/Image (1).png" class="col-70-img" alt="">
+                </div>         
+            </div>
+        </div>
+    </section>
+    <section id="new-img">
+        <div class="containar">
+            <div class="row">
+                <div class="col-40">
+                    <img src="../PSD FILE/PSD imaig/Image.png" class="col40-img" alt="">
+                </div>
+                <div class="col-401">
+                    <h2 class="col40-h2">NEW<br>
+                         EXPERIENCE</h2>
+                         <p class="col40-p">Lorem ipsum dolor sit amet consectetur adipisicing elit soiot sit-<br>
+                             Hic aut necessitatibus soluta corporis? Tenetur quae dolorsit-<br> 
+                             ipsam praesentium repellendus facere non illo est qui impedit.</p>
+                             <a href="#">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="prin-cing">
+                    <h2 class="prin-h2">princing</h2>
+                    <p class="prin-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, vero ea.<br>
+                         Facere inventore aspernatur atque perferendis voluptate maiores eius rem quas.<br>
+                          quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="card-33">
+                    <img src="../PSD FILE/PSD imaig/Card  (1).png" alt="">
+                </div>
+                <div class="card-33">
+                    <img src="../PSD FILE/PSD imaig/Card  (2).png" alt="">
+                </div>
+                <div class="card-33">
+                    <img src="../PSD FILE/PSD imaig/Card  (3).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gurop-img">
+       <div class="containar">
+        <div class="row">
+            <div class="gurop-7 img-10">
+                <img src="../PSD FILE/PSD imaig/10 img.png" class="top-img1 img-top" alt="">
+                <img src="../PSD FILE/PSD imaig/img 10.png" class="top-dis" alt="">
+                <p class="gurop-7-p">Lorem ipsum dolor sit amet consectetur adipisicing elit  rerum expedita quidem deserunt-<br>
+                     Obcaecati, ex dolore rerum expedita quidem deserunt  rerum expedita quidem deserunt-<br>
+                      laudantium consequuntur quas! Tempore repellat  rerum expedita quidem .</p>
+                      <h2 class="gurop-7-h2">TRAINER DIVANDRA</h2> 
+            </div>
+        </div>
+       </div> 
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="gurop-8">
+                    <h2 class="gurop-8-h2">DONT MISS UOR UPDATE</h2>
+                    <P class="gurop-8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora velit atque-<br>
+                         animi impedit numquam corporis fugit, sapiente sint accusamus sit consectetur quam -<br>
+                          similique.</P>
+                          <img src="../PSD FILE/PSD imaig/Form.png" class="gurop-8-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containar">
+            <div class="row">
+                <div class="col-101">
+                    <h3 class="col10-1">TITLE HERE</h3>
+                    <P class="col-10-p">Lorem ipsum dolor sit amet consectetur adipisicing-<br>
+                         elit. Nisi odit assumenda perspiciatis aliquam quis-<br>
+                          asperiores iste. Veritatis iure perspiciatis eaque-<br>
+                           doloribus, ad et nobis quae, dolorem repellendus dolor.</P>
+                </div>
+                <div class="col-10">
+                    <h3 class="col10-1">About</h3>
+                    <ul id="col-11">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">0ur Team</a></li>
+                        <li><a href="#">BrandGuidelines</a></li>
+                        <li><a href="#">Terms&condition</a></li>
+                        <li><a href="#">Priva policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <h3 class="col10-1">Services</h3>
+                    <ul id="col-11">
+                        <li><a href="#">Howto order</a></li>
+                        <li><a href="#">Our product</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">Paymen method</a></li>
+                        <li><a href="#">Oder status</a></li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <h3 class="col10-1">FOllow</h3>
+                    <ul id="col-11">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Wshatsaap</a></li>
+                    </ul>            
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
